@@ -3,9 +3,9 @@
 
 The requirements.txt has been updated to include new versions of some packages as some of the original ones are no longer available for python 3.10
 
-tensorflow==1.14.0 -> tensorflow==2.12.0
-opencv-python==3.4.2.16 -> opencv-python==3.4.18.65
-opencv-contrib-python==3.4.2.16 -> opencv-contrib-python==3.4.18.65
+- tensorflow==1.14.0 -> tensorflow==2.12.0
+- opencv-python==3.4.2.16 -> opencv-python==3.4.18.65
+- opencv-contrib-python==3.4.2.16 -> opencv-contrib-python==3.4.18.65
 
 
 To install run the following below
@@ -15,8 +15,10 @@ pip install -r requirements.txt
 pip install -r requirements_torch.txt # install pytorch
 ```
 
+Download the traning datasets [here](https://logicpallet.sharepoint.com/:f:/s/LogicData/ElNmWqcCvxVGsmsw5ORRkYUBgR8w-k_XfI-ReBNWfPKIhw?e=f4yatS)
 
-To start training unzip concrete.zip under Datasets and magicpoint_synth_homoAdapt_concrete.zip under logs
+
+To start training download and extract concrete.zip under Datasets and magicpoint_synth_homoAdapt_concrete.zip under logs
 
 Once the files are extracted run 
 
