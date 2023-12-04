@@ -11,6 +11,8 @@ The requirements.txt has been updated to include new versions of some packages a
 To install run the following below
 
 ```
+conda create --name py310-sp python=3.10
+conda activate py310-sp
 pip install -r requirements.txt
 pip install -r requirements_torch.txt # install pytorch
 ```
