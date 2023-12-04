@@ -1,4 +1,30 @@
-# pytorch-superpoint
+
+# Logic ReadMe
+
+The requirements.txt has been updated to include new versions of some packages as some of the original ones are no longer available for python 3.10
+
+tensorflow==1.14.0 -> tensorflow==2.12.0
+opencv-python==3.4.2.16 -> opencv-python==3.4.18.65
+opencv-contrib-python==3.4.2.16 -> opencv-contrib-python==3.4.18.65
+
+
+To install run the following below
+
+```
+pip install -r requirements.txt
+pip install -r requirements_torch.txt # install pytorch
+```
+
+
+To start training unzip concrete.zip under Datasets and magicpoint_synth_homoAdapt_concrete.zip under logs
+
+Once the files are extracted run 
+
+```
+python train4.py train_joint configs/superpoint_concrete_train_heatmap.yaml superpoint_concrete --eval --debug
+```
+
+# Original ReadMe - pytorch-superpoint
 
 This is a PyTorch implementation of  "SuperPoint: Self-Supervised Interest Point Detection and Description." Daniel DeTone, Tomasz Malisiewicz, Andrew Rabinovich. [ArXiv 2018](https://arxiv.org/abs/1712.07629).
 This code is partially based on the tensorflow implementation
